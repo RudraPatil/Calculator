@@ -2,7 +2,7 @@ name: Build Calculator EXE
 
 on:
 workflow_run:
-    workflows: ["ci"]
+    workflows: ["Python Calculator CI"]
     types:
       - completed
 
@@ -16,6 +16,9 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v4
+        - uses: actions/checkout@v4
+        with:
+        ref: ${{ github.event.workflow_run.head_sha }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
