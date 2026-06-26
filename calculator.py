@@ -1,5 +1,5 @@
 """
-GUI Calculator Application with Square Root
+GUI Calculator Application including Square Root
 """
 
 import tkinter as tk
