@@ -10,7 +10,7 @@ class CalculatorGUI:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("Calculator")
+        self.root.title("Calculator") #this is calculator project
 
         self.expression = ""
 
